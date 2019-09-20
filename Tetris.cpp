@@ -11,10 +11,10 @@
 /*& 0x1F --- & B1 1111*/
 using namespace std;
 /*
-'1' il campo è vuoto
-'1' il campo è occupato da un blocco statico
-'2' il campo è occupato da un blocco mobile
-'3' il campo è occupato dal perno
+'1' il campo Ã¨ vuoto
+'1' il campo Ã¨ occupato da un blocco statico
+'2' il campo Ã¨ occupato da un blocco mobile
+'3' il campo Ã¨ occupato dal perno
 
 '1' empty field
 '1' static tetrimino's block
@@ -25,7 +25,7 @@ bool collisione, gameover = false, creazione = true;
 int a, n, f, score, tetris, type, rotaz = 0, x, y, tempRot, tot = 0;
 char in;
 char field [23] [12];
-char blocco [7 /*Blocco Block*/][4/*Orientamento Positioning*/][5 /*colonna Column*/][5 /*Riga Row*/]{
+const char blocco [7 /*Blocco Block*/][4/*Orientamento Positioning*/][5 /*colonna Column*/][5 /*Riga Row*/]{
 	///////////////////////////// BLOCCO 1 (T)
 	{
 		///////////////////////// POSIZIONI
